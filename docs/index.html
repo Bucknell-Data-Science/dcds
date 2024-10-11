@@ -125,14 +125,12 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th>Event</th>
 <th>HTML Slides</th>
-<th>PDF Slides</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Coffee and Treats with L&amp;IT</td>
-<td><a href="https://mcconvil.github.io/dcds/data_lit_f24.html"><i class="fa-solid fa-display" aria-label="display"></i></a></td>
-<td><a href="https://mcconvil.github.io/stat100s24/pdfs/stat100_wk01mon.pdf"><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i></a></td>
+<td><a href="https://bucknell-data-science.github.io/dcds/data_lit_f24.html"><i class="fa-solid fa-display" aria-label="display"></i></a></td>
 </tr>
 </tbody>
 </table>
@@ -233,7 +231,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/mcconvil\.github\.io\/dcds");
+      var filterRegex = new RegExp("https:\/\/bucknell-data-science\.github\.io\/dcds");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

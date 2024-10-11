@@ -1,1 +1,1 @@
-Sitemap: https://mcconvil.github.io/dcds/sitemap.xml
+Sitemap: https://bucknell-data-science.github.io/dcds/sitemap.xml

@@ -5,7 +5,7 @@ title: "Materials for the Dominguez Center for Data Science"
 
 
 ::: column-screen-inset-right
-| Event | HTML Slides                                                                      | PDF Slides                                                                            |
-|-----------------|--------------------------|----------------------------|
-| Coffee and Treats with L&IT  | [{{< fa display >}}](https://mcconvil.github.io/dcds/data_lit_f24.html) | [{{< fa file-pdf >}}](https://mcconvil.github.io/stat100s24/pdfs/stat100_wk01mon.pdf) |
+| Event | HTML Slides                                                                      |
+|-----------------|--------------------------|
+| Coffee and Treats with L&IT  | [{{< fa display >}}](https://bucknell-data-science.github.io/dcds/data_lit_f24.html) |
 :::

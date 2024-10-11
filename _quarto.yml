@@ -7,7 +7,7 @@ project:
 website:
   page-navigation: true
   title: "Dominguez Center for Data Science"
-  site-url: "https://mcconvil.github.io/dcds"
+  site-url: "https://bucknell-data-science.github.io/dcds"
   search: 
     type: overlay
   navbar:
