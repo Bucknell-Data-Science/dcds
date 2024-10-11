@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Materials for the Dominguez Center for Data Science",
+    "section": "",
+    "text": "Event\nHTML Slides\nPDF Slides\n\n\n\n\nCoffee and Treats with L&IT"
+  },
+  {
+    "objectID": "data_lit_f24.html#bombardment-of-data-arguments",
+    "href": "data_lit_f24.html#bombardment-of-data-arguments",
+    "title": "Dominguez Center for Data Science",
+    "section": "Bombardment of Data Arguments",
+    "text": "Bombardment of Data Arguments\n\n\n\n\n\nNYTimes “What’s Going on in this Graph? Oct 23, 2024”\n\n\n\n\n\n\nNYTimes “What’s Going on in this Graph? Attempted Crossings at the U.S. Southern Border”"
+  },
+  {
+    "objectID": "data_lit_f24.html#bombardment-of-data-arguments-1",
+    "href": "data_lit_f24.html#bombardment-of-data-arguments-1",
+    "title": "Dominguez Center for Data Science",
+    "section": "Bombardment of Data Arguments",
+    "text": "Bombardment of Data Arguments\n\n\n\n\n\nNYTimes “Some Colleges Have More Students From the Top 1 Percent Than the Bottom 60. Find Yours.”\n\n\n\n\n\n\nKate Petrova on X, Nov 27, 2020"
+  },
+  {
+    "objectID": "data_lit_f24.html#example-visualizing-covid-prevalence",
+    "href": "data_lit_f24.html#example-visualizing-covid-prevalence",
+    "title": "Dominguez Center for Data Science",
+    "section": "Example: Visualizing COVID Prevalence",
+    "text": "Example: Visualizing COVID Prevalence\nIn May of 2020, the Georgia Department of Public Health posted the following graph:\n\n\n\n\n\n\nAt a quick first glance, what story does the Georgia Department of Public Health graph appear to be telling?\nWhat is misleading about the Georgia Department of Public Health graph? How could we fix this issue?"
+  },
+  {
+    "objectID": "data_lit_f24.html#example-visualizing-covid-prevalence-1",
+    "href": "data_lit_f24.html#example-visualizing-covid-prevalence-1",
+    "title": "Dominguez Center for Data Science",
+    "section": "Example: Visualizing COVID Prevalence",
+    "text": "Example: Visualizing COVID Prevalence\nAfter public outcry, the Georgia Department of Public Health said they made a mistake and posted the following updated graph:\n\n\n\n\n\n\nHow do your conclusions about COVID-19 cases in Georgia change when now interpreting this new graph?"
+  },
+  {
+    "objectID": "data_lit_f24.html#example-visualizing-covid-prevalence-2",
+    "href": "data_lit_f24.html#example-visualizing-covid-prevalence-2",
+    "title": "Dominguez Center for Data Science",
+    "section": "Example: Visualizing COVID Prevalence",
+    "text": "Example: Visualizing COVID Prevalence\nAlberto Cairo, a journalist and designer, created the second graph of the Georgia COVID-19 data:\n\n \n\n\nA key principle of data visualization is to “help the viewer make meaningful comparisons”.\nWhat comparisons are made easy by the lefthand graph? What about by the righthand graph?\nFrom these graphs, can we get an accurate estimate of the COVID prevalence in these Georgian counties over this two week period?"
+  },
+  {
+    "objectID": "data_lit_f24.html#example-visualizing-covid-prevalence-3",
+    "href": "data_lit_f24.html#example-visualizing-covid-prevalence-3",
+    "title": "Dominguez Center for Data Science",
+    "section": "Example: Visualizing COVID Prevalence",
+    "text": "Example: Visualizing COVID Prevalence\n\n\nThe Massachusetts Water Resources Authority (MWRA) graph tracks the presence of COVID-19 in the Boston-area wastewater.\n\n\n\n\n\n\n\n\n\n\n\n\nWhat are the pros of using wastewater over nasal swabs to assess COVID prevalence? What are the cons?\nThe graph also incorporates uncertainty measures. Quantifying uncertainty is a key component of data literacy."
+  },
+  {
+    "objectID": "data_lit_f24.html#data-literacy-in-action",
+    "href": "data_lit_f24.html#data-literacy-in-action",
+    "title": "Dominguez Center for Data Science",
+    "section": "Data Literacy In Action",
+    "text": "Data Literacy In Action\n\n\n\nUnderstanding the importance of context.\n\n\n\n Context explains the Monday jumps in the COVID counts.\n\n\n\n\n\nHow we encode information in a graph should be driven by our research question.\n\n\n\n You have a lot of design choices and these choices can help or hinder the story-telling.\n\n\n\n\n\nHow the data are collected impacts the conclusions we can draw.\n\n\n\n Voluntary COVID test results likely don’t provide good estimates of COVID prevalence.\n\n\n\n\n\nOften we are using a sample of data to say something about a larger group. In this case, we should measure how certain our estimates are!\n\n\n\n They sampled the wastewater and then got a range of plausible values for the RNA copies each day."
+  },
+  {
+    "objectID": "data_lit_f24.html#data-analysis-process",
+    "href": "data_lit_f24.html#data-analysis-process",
+    "title": "Dominguez Center for Data Science",
+    "section": "Data Analysis Process",
+    "text": "Data Analysis Process\n\n\n\n\n  \n\nNeed to understand how “raw” data are processed into insights.\nWhat choices were made at each step?\nHow do those choices impact the conclusions?"
+  },
+  {
+    "objectID": "data_lit_f24.html#data-literacy-training",
+    "href": "data_lit_f24.html#data-literacy-training",
+    "title": "Dominguez Center for Data Science",
+    "section": "Data Literacy Training",
+    "text": "Data Literacy Training\n\nAbout developing reasoning\n\nNot just learning definitions and formulae\nNot just memorizing arbitrary rules (p-value \\(&lt;\\) 0.05, sample size \\(&gt;\\) 30)\n\nRequires judgment that takes time to develop\n\nLots of great classes at Bucknell where students practice!"
+  },
+  {
+    "objectID": "data_lit_f24.html#dominguez-center-for-data-science",
+    "href": "data_lit_f24.html#dominguez-center-for-data-science",
+    "title": "Dominguez Center for Data Science",
+    "section": "Dominguez Center for Data Science",
+    "text": "Dominguez Center for Data Science\n\nSeminars\n\nAI 101, AI 102\n\nWorkshops\nData Science Projects\nCommunities of Practice\n\nrugB (R Users Group at Bucknell)"
+  },
+  {
+    "objectID": "data_lit_f24.html#discussion-questions",
+    "href": "data_lit_f24.html#discussion-questions",
+    "title": "Dominguez Center for Data Science",
+    "section": "Discussion Questions",
+    "text": "Discussion Questions\n\nHow can the Center support data literacy at Bucknell?\nWhat is data literacy to you?\nHow do you see generative AI changing or impacting data literacy?"
+  }
+]

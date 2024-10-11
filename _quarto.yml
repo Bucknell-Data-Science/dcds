@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+#  resources: 
+#      - pdfs
+#      - articles
+website:
+  page-navigation: true
+  title: "Dominguez Center for Data Science"
+  site-url: "https://mcconvil.github.io/dcds"
+  search: 
+    type: overlay
+  navbar:
+    background: "#D1495B"
+    search: true
+    style: "docked"
+  # navbar:
+  #   left:
+  #   - text: "Homepage"
+  #     icon: fa-home
+  #     href: idex.qmd
+  #   - text: "Slides"
+  #     icon: fa-chart-area
+  #     menu:
+  #       - text: "L&IT Data Literacy"
+  #         icon: fa-file
+  #         href: data_lit_f24.qmd
+
+format:
+  html:
+    theme: yeti
+    css: ["styles.css", "more.css"]
+    toc: true
+
+editor: visual
+
