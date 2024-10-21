@@ -4,7 +4,7 @@
     "href": "packages_rugB.html#sharing-code",
     "title": "Dominguez Center for Data Science",
     "section": "Sharing Code",
-    "text": "Sharing Code\n\n\n \n\nHow do you share code?\n\nR scripts and R Markdown documents\nRStudio Projects\nGitHub Repository\nR Package"
+    "text": "Sharing Code\nHow do you share code?\n\n\nR scripts and R Markdown/Quarto documents\nRStudio Projects\nGitHub Repository\nR Package"
   },
   {
     "objectID": "packages_rugB.html#when-to-create-an-r-package",

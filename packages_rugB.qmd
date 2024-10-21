@@ -3,7 +3,7 @@ pagetitle: "R Packages"
 format: 
   revealjs:
     chalkboard: true
-    incremental: true
+#    incremental: true
     theme: [default, custom.scss]
     multiplex: true
     height: 900
@@ -58,31 +58,23 @@ library(tidyverse)
 
 ## Sharing Code
 
-::::: columns
-::: {.column .center width="50%"}
-![](img/STAT108Logo_Sharing.png){width="30%"}
-<br>
 
-
-
-:::
-
-::: {.column width="50%"}
 
 How do you share code?
 
 
-* `R` scripts and `R` Markdown documents
+
+::: {.fragment}
+
+
+* `R` scripts and `R` Markdown/Quarto documents
 * RStudio Projects
 * GitHub Repository
 * R Package
 
-
-
-
 :::
 
-:::::
+
 
 ---
 
@@ -177,7 +169,7 @@ Will focus on dog names in Cambridge, MA because I couldn't find a corresponding
 ![](img/pa_dogs.png)
 ---
 
-#### Our Package: `camDogs`
+### Our Package: `camDogs`
 
 **Goals**: 
 

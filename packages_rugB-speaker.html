@@ -407,25 +407,22 @@
 </section>
 <section id="sharing-code" class="slide level2">
 <h2>Sharing Code</h2>
-<div class="columns">
-<div class="column center" style="width:50%;">
-<p><img data-src="img/STAT108Logo_Sharing.png" style="width:30.0%"> <br></p>
-</div><div class="column" style="width:50%;">
 <p>How do you share code?</p>
+<div class="fragment">
 <ul>
-<li class="fragment"><code>R</code> scripts and <code>R</code> Markdown documents</li>
-<li class="fragment">RStudio Projects</li>
-<li class="fragment">GitHub Repository</li>
-<li class="fragment">R Package</li>
+<li><code>R</code> scripts and <code>R</code> Markdown/Quarto documents</li>
+<li>RStudio Projects</li>
+<li>GitHub Repository</li>
+<li>R Package</li>
 </ul>
-</div></div>
+</div>
 </section>
 <section id="when-to-create-an-r-package" class="slide level2">
 <h2>When To Create an <code>R</code> Package?</h2>
 <ul>
-<li class="fragment"><p>If you have certain recurring operations that occur across multiple projects.</p></li>
-<li class="fragment"><p>Want to share data and documentation and not worry about file paths, file types, the documentation getting lost…</p></li>
-<li class="fragment"><p><strong>BUT</strong>, you will still use an RStudio Project (with a corresponding GitHub repo) for the code and data that are specific to a given project.</p></li>
+<li><p>If you have certain recurring operations that occur across multiple projects.</p></li>
+<li><p>Want to share data and documentation and not worry about file paths, file types, the documentation getting lost…</p></li>
+<li><p><strong>BUT</strong>, you will still use an RStudio Project (with a corresponding GitHub repo) for the code and data that are specific to a given project.</p></li>
 </ul>
 </section>
 <section id="r-packages" class="slide level2">
@@ -434,42 +431,42 @@
 <p>“R packages are the fundamental unit of R-ness”. – Jenny Bryan</p>
 </blockquote>
 <ul>
-<li class="fragment"><p>Contains functions, (possibly) datasets, documentation, and tests.</p></li>
-<li class="fragment"><p>“base R”: 14 base packages that are preloaded</p>
+<li><p>Contains functions, (possibly) datasets, documentation, and tests.</p></li>
+<li><p>“base R”: 14 base packages that are preloaded</p>
 <ul>
-<li class="fragment">There are 15 other packages that also come preloaded.</li>
+<li>There are 15 other packages that also come preloaded.</li>
 </ul></li>
-<li class="fragment"><p>CRAN has &gt; 19,000 more packages</p>
+<li><p>CRAN has &gt; 19,000 more packages</p>
 <ul>
-<li class="fragment"><code>install.packages("dplyr")</code></li>
-<li class="fragment"><code>library(dplyr)</code></li>
+<li><code>install.packages("dplyr")</code></li>
+<li><code>library(dplyr)</code></li>
 </ul></li>
-<li class="fragment"><p>And then there are all the packages on <code>GitHub</code>:</p>
+<li><p>And then there are all the packages on <code>GitHub</code>:</p>
 <ul>
-<li class="fragment"><code>pak::pak("tidyverse/dplyr")</code></li>
-<li class="fragment"><code>library(dplyr)</code></li>
+<li><code>pak::pak("tidyverse/dplyr")</code></li>
+<li><code>library(dplyr)</code></li>
 </ul></li>
 </ul>
 </section>
 <section id="r-data-packages" class="slide level2">
 <h2>R Data Packages</h2>
 <ul>
-<li class="fragment"><p>Great way to share data!</p></li>
-<li class="fragment"><p>Example 1:</p>
+<li><p>Great way to share data!</p></li>
+<li><p>Example 1:</p>
 <ul>
-<li class="fragment"><code>library(mosaicData)</code></li>
-<li class="fragment"><code>data(package = "mosaicData")</code></li>
-<li class="fragment"><code>?Births2015</code></li>
+<li><code>library(mosaicData)</code></li>
+<li><code>data(package = "mosaicData")</code></li>
+<li><code>?Births2015</code></li>
 </ul></li>
-<li class="fragment"><p>Example 2:</p>
+<li><p>Example 2:</p>
 <ul>
-<li class="fragment"><code>library(pdxTrees)</code></li>
-<li class="fragment"><code>get_pdxTrees_parks()</code></li>
-<li class="fragment"><code>get_pdxTrees_streets()</code></li>
+<li><code>library(pdxTrees)</code></li>
+<li><code>get_pdxTrees_parks()</code></li>
+<li><code>get_pdxTrees_streets()</code></li>
 </ul></li>
-<li class="fragment"><p>Example 3:</p>
+<li><p>Example 3:</p>
 <ul>
-<li class="fragment"><code>library(palmerpenguins)</code></li>
+<li><code>library(palmerpenguins)</code></li>
 </ul></li>
 </ul>
 </section>
@@ -477,24 +474,24 @@
 <h2>R Packages</h2>
 <h3 id="why-create-an-r-package">Why create an R package?</h3>
 <ul>
-<li class="fragment">Very portable.</li>
-<li class="fragment">Includes documentation.</li>
-<li class="fragment">Provides a useful structure for organizing your work:
+<li>Very portable.</li>
+<li>Includes documentation.</li>
+<li>Provides a useful structure for organizing your work:
 <ul>
-<li class="fragment"><code>R</code> folder: Code</li>
-<li class="fragment"><code>tests</code> folder: Testing functions</li>
-<li class="fragment"><code>data</code> folder: Storing data</li>
+<li><code>R</code> folder: Code</li>
+<li><code>tests</code> folder: Testing functions</li>
+<li><code>data</code> folder: Storing data</li>
 </ul></li>
-<li class="fragment">Lots of helper functions in other packages to automate parts of the process.</li>
+<li>Lots of helper functions in other packages to automate parts of the process.</li>
 </ul>
 </section>
 <section id="creating-an-r-package" class="slide level2">
 <h2>Creating an R Package</h2>
 <p>Key packages:</p>
 <ul>
-<li class="fragment"><p><a href="https://cran.r-project.org/web/packages/devtools/index.html"><code>devtools</code></a>: supports the development and dissemination of the package</p></li>
-<li class="fragment"><p><a href="https://usethis.r-lib.org/"><code>usethis</code></a>: automates steps of package creation, such as constructing the data file</p></li>
-<li class="fragment"><p><a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html"><code>roxygen2</code></a>: simplifies writing documentation</p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/devtools/index.html"><code>devtools</code></a>: supports the development and dissemination of the package</p></li>
+<li><p><a href="https://usethis.r-lib.org/"><code>usethis</code></a>: automates steps of package creation, such as constructing the data file</p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html"><code>roxygen2</code></a>: simplifies writing documentation</p></li>
 </ul>
 </section>
 <section id="lets-create-an-r-package" class="slide level2">
@@ -504,12 +501,12 @@
 </section>
 <section class="slide level2">
 
-<h4 id="our-package-camdogs">Our Package: <code>camDogs</code></h4>
+<h3 id="our-package-camdogs">Our Package: <code>camDogs</code></h3>
 <p><strong>Goals</strong>:</p>
 <ul>
-<li class="fragment"><p>Share the <a href="https://data.cambridgema.gov/General-Government/Dogs-of-Cambridge/sckh-3xyx">Dogs of Cambridge dataset</a>, along with documentation.</p></li>
-<li class="fragment"><p>Create a function that outputs a dataset of the dogs with the 10 most common names.</p></li>
-<li class="fragment"><p>Useful MVP code:</p></li>
+<li><p>Share the <a href="https://data.cambridgema.gov/General-Government/Dogs-of-Cambridge/sckh-3xyx">Dogs of Cambridge dataset</a>, along with documentation.</p></li>
+<li><p>Create a function that outputs a dataset of the dogs with the 10 most common names.</p></li>
+<li><p>Useful MVP code:</p></li>
 </ul>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(tidyverse)</span>
@@ -536,9 +533,9 @@
 
 <h3 id="steps">Steps</h3>
 <ul>
-<li class="fragment"><p>Let’s go through the <a href="https://bucknell-data-science.github.io/dcds/pdfs/R_package_handout.pdf">“Creating an R Package” hand-out</a>.</p></li>
-<li class="fragment"><p>I will demo the process with <a href="https://data.cambridgema.gov/General-Government/Dogs-of-Cambridge/sckh-3xyx">this Dogs of Cambridge dataset</a>.</p></li>
-<li class="fragment"><p>If following along, clone this repo: <a href="https://github.com/harvard-stat108s23/pkgDemo">https://github.com/harvard-stat108s23/pkgDemo</a></p></li>
+<li><p>Let’s go through the <a href="https://bucknell-data-science.github.io/dcds/pdfs/R_package_handout.pdf">“Creating an R Package” hand-out</a>.</p></li>
+<li><p>I will demo the process with <a href="https://data.cambridgema.gov/General-Government/Dogs-of-Cambridge/sckh-3xyx">this Dogs of Cambridge dataset</a>.</p></li>
+<li><p>If following along, clone this repo: <a href="https://github.com/harvard-stat108s23/pkgDemo">https://github.com/harvard-stat108s23/pkgDemo</a></p></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
