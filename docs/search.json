@@ -39,7 +39,7 @@
     "href": "packages_rugB.html#creating-an-r-package",
     "title": "Dominguez Center for Data Science",
     "section": "Creating an R Package",
-    "text": "Creating an R Package\nKey packages:\n\ndevtools: supports the development and dissemination of the package\nusethis: automates steps of package creation, such as constructing the data file\nroxygen2: simplifies writing documentation"
+    "text": "Creating an R Package\nKey packages:\n\ndevtools: supports the development and dissemination of the package\nusethis: automates steps of package creation, such as constructing the data file\nroxygen2: simplifies writing documentation\n\nTHE Book: R Packages, 2nd Edition"
   },
   {
     "objectID": "packages_rugB.html#lets-create-an-r-package",

@@ -160,6 +160,8 @@ Key packages:
 
 * [`roxygen2`](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html): simplifies writing documentation
 
+THE Book: [R Packages, 2nd Edition](https://r-pkgs.org/)
+
 ---
 
 ## Let's Create an R Package!
@@ -211,4 +213,4 @@ top10 <- function(data, x){
 
 * If following along, clone this repo: [https://github.com/harvard-stat108s23/pkgDemo](https://github.com/harvard-stat108s23/pkgDemo)
 
-
+* All the steps are outlined in more detail in [R Packages, 2nd Edition](https://r-pkgs.org/)
