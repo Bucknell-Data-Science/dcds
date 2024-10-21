@@ -1,10 +1,52 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Materials for the Dominguez Center for Data Science",
-    "section": "",
-    "text": "Event\nHTML Slides\n\n\n\n\nCoffee and Treats with L&IT"
+    "objectID": "packages_rugB.html#sharing-code",
+    "href": "packages_rugB.html#sharing-code",
+    "title": "Dominguez Center for Data Science",
+    "section": "Sharing Code",
+    "text": "Sharing Code\n\n\n \n\nHow do you share code?\n\nR scripts and R Markdown documents\nRStudio Projects\nGitHub Repository\nR Package"
+  },
+  {
+    "objectID": "packages_rugB.html#when-to-create-an-r-package",
+    "href": "packages_rugB.html#when-to-create-an-r-package",
+    "title": "Dominguez Center for Data Science",
+    "section": "When To Create an R Package?",
+    "text": "When To Create an R Package?\n\nIf you have certain recurring operations that occur across multiple projects.\nWant to share data and documentation and not worry about file paths, file types, the documentation getting lost…\nBUT, you will still use an RStudio Project (with a corresponding GitHub repo) for the code and data that are specific to a given project."
+  },
+  {
+    "objectID": "packages_rugB.html#r-packages",
+    "href": "packages_rugB.html#r-packages",
+    "title": "Dominguez Center for Data Science",
+    "section": "R Packages",
+    "text": "R Packages\n\n“R packages are the fundamental unit of R-ness”. – Jenny Bryan\n\n\nContains functions, (possibly) datasets, documentation, and tests.\n“base R”: 14 base packages that are preloaded\n\nThere are 15 other packages that also come preloaded.\n\nCRAN has &gt; 19,000 more packages\n\ninstall.packages(\"dplyr\")\nlibrary(dplyr)\n\nAnd then there are all the packages on GitHub:\n\npak::pak(\"tidyverse/dplyr\")\nlibrary(dplyr)"
+  },
+  {
+    "objectID": "packages_rugB.html#r-data-packages",
+    "href": "packages_rugB.html#r-data-packages",
+    "title": "Dominguez Center for Data Science",
+    "section": "R Data Packages",
+    "text": "R Data Packages\n\nGreat way to share data!\nExample 1:\n\nlibrary(mosaicData)\ndata(package = \"mosaicData\")\n?Births2015\n\nExample 2:\n\nlibrary(pdxTrees)\nget_pdxTrees_parks()\nget_pdxTrees_streets()\n\nExample 3:\n\nlibrary(palmerpenguins)"
+  },
+  {
+    "objectID": "packages_rugB.html#r-packages-1",
+    "href": "packages_rugB.html#r-packages-1",
+    "title": "Dominguez Center for Data Science",
+    "section": "R Packages",
+    "text": "R Packages\nWhy create an R package?\n\nVery portable.\nIncludes documentation.\nProvides a useful structure for organizing your work:\n\nR folder: Code\ntests folder: Testing functions\ndata folder: Storing data\n\nLots of helper functions in other packages to automate parts of the process."
+  },
+  {
+    "objectID": "packages_rugB.html#creating-an-r-package",
+    "href": "packages_rugB.html#creating-an-r-package",
+    "title": "Dominguez Center for Data Science",
+    "section": "Creating an R Package",
+    "text": "Creating an R Package\nKey packages:\n\ndevtools: supports the development and dissemination of the package\nusethis: automates steps of package creation, such as constructing the data file\nroxygen2: simplifies writing documentation"
+  },
+  {
+    "objectID": "packages_rugB.html#lets-create-an-r-package",
+    "href": "packages_rugB.html#lets-create-an-r-package",
+    "title": "Dominguez Center for Data Science",
+    "section": "Let’s Create an R Package!",
+    "text": "Let’s Create an R Package!\nWill focus on dog names in Cambridge, MA because I couldn’t find a corresponding PA version of this data…"
   },
   {
     "objectID": "data_lit_f24.html#bombardment-of-data-arguments",
@@ -82,5 +124,12 @@
     "title": "Dominguez Center for Data Science",
     "section": "Discussion Questions",
     "text": "Discussion Questions\n\nHow can the Center support data literacy at Bucknell?\nWhat is data literacy to you?\nHow do you see generative AI changing or impacting data literacy?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Materials for the Dominguez Center for Data Science",
+    "section": "",
+    "text": "Event\nHTML Slides\n\n\n\n\nCoffee and Treats with L&IT\n\n\n\nrugB: R Packages"
   }
 ]

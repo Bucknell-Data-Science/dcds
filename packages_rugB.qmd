@@ -1,0 +1,222 @@
+---
+pagetitle: "R Packages"
+format: 
+  revealjs:
+    chalkboard: true
+    incremental: true
+    theme: [default, custom.scss]
+    multiplex: true
+    height: 900
+    width: 1600
+    slide-number: c
+    auto-stretch: false
+    callout-appearance: simple
+    pdf-max-pages-per-slide: 2
+    menu: 
+      side: right
+      numbers: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+#| include: false
+#| warning: false
+#| message: false
+
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, 
+                      fig.retina = 3, fig.align = 'center')
+library(knitr)
+library(tidyverse)
+
+# set width of code output
+# options(width = 65)
+```
+
+::::: columns
+::: {.column .center width="60%"}
+![](img/allison_horst_usethis.png){width="90%"}
+:::
+
+::: {.column .center width="40%"}
+<br>
+
+[R Packages]{.custom-title}
+
+<br> <br> <br> <br>
+
+[Kelly McConville]{.custom-subtitle}
+
+[rugB \| Oct 2024]{.custom-subtitle}
+:::
+:::::
+
+
+---
+
+## Sharing Code
+
+::::: columns
+::: {.column .center width="50%"}
+![](img/STAT108Logo_Sharing.png){width="30%"}
+<br>
+
+
+
+:::
+
+::: {.column width="50%"}
+
+How do you share code?
+
+
+* `R` scripts and `R` Markdown documents
+* RStudio Projects
+* GitHub Repository
+* R Package
+
+
+
+
+:::
+
+:::::
+
+---
+
+## When To Create an `R` Package?
+
+* If you have certain recurring operations that occur across multiple projects.
+* Want to share data and documentation and not worry about file paths, file types, the documentation getting lost...
+
+* **BUT**, you will still use an RStudio Project (with a corresponding GitHub repo) for the code and data that are specific to a given project.
+
+
+---
+
+## R Packages
+
+
+> "R packages are the fundamental unit of R-ness". -- Jenny Bryan
+
+
+
+* Contains functions, (possibly) datasets, documentation, and tests.  
+
+* "base R": 14 base packages that are preloaded
+    + There are 15 other packages that also come preloaded.
+
+* CRAN has > 19,000 more packages
+    + `install.packages("dplyr")`
+    + `library(dplyr)`
+
+* And then there are all the packages on `GitHub`:
+    + `pak::pak("tidyverse/dplyr")`
+    + `library(dplyr)`
+
+
+---
+
+## R Data Packages
+
+* Great way to share data!
+    
+    
+* Example 1:
+    + `library(mosaicData)`
+    + `data(package = "mosaicData")`
+    + `?Births2015`
+
+
+
+* Example 2:    
+    + `library(pdxTrees)`
+    + `get_pdxTrees_parks()`
+    + `get_pdxTrees_streets()`
+
+
+* Example 3: 
+    + `library(palmerpenguins)`
+    
+
+---
+
+## R Packages
+
+### Why create an R package?
+
+* Very portable.
+* Includes documentation.
+* Provides a useful structure for organizing your work:
+    + `R` folder: Code
+    + `tests` folder: Testing functions
+    + `data` folder: Storing data
+* Lots of helper functions in other packages to automate parts of the process.
+    
+
+---
+
+## Creating an R Package
+
+Key packages: 
+
+* [`devtools`](https://cran.r-project.org/web/packages/devtools/index.html): supports the development and dissemination of the package
+
+* [`usethis`](https://usethis.r-lib.org/): automates steps of package creation, such as constructing the data file
+
+* [`roxygen2`](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html): simplifies writing documentation
+
+---
+
+## Let's Create an R Package!
+
+Will focus on dog names in Cambridge, MA because I couldn't find a corresponding PA version of this data...
+
+![](img/pa_dogs.png)
+---
+
+#### Our Package: `camDogs`
+
+**Goals**: 
+
+* Share the [Dogs of Cambridge dataset](https://data.cambridgema.gov/General-Government/Dogs-of-Cambridge/sckh-3xyx), along with documentation.
+* Create a function that outputs a dataset of the dogs with the 10 most common names.
+
+* Useful MVP code:
+
+```{r}
+library(tidyverse)
+camDogs <- read_csv("https://data.cambridgema.gov/api/views/sckh-3xyx/rows.csv?accessType=DOWNLOAD")
+
+camDogs <- mutate(camDogs,
+               Breed = if_else(Dog_Breed == "Mixed Breed",
+                               "Mixed", "Single"))
+
+top10 <- function(data, x){
+
+  # Find the 10 top based on x
+  top10x <- count(data, {{x}}) %>%
+    slice_max(n = 10, order_by = n) %>%
+    select({{x}}) %>%
+    pull()
+
+   # Filter dataset to only the 10 top based on x
+  return(filter(data, {{x}} %in% top10x))
+}
+```
+
+
+    
+---
+
+### Steps
+
+* Let's go through the ["Creating an R Package" hand-out](https://bucknell-data-science.github.io/dcds/pdfs/R_package_handout.pdf).
+
+* I will demo the process with [this Dogs of Cambridge dataset](https://data.cambridgema.gov/General-Government/Dogs-of-Cambridge/sckh-3xyx).
+
+* If following along, clone this repo: [https://github.com/harvard-stat108s23/pkgDemo](https://github.com/harvard-stat108s23/pkgDemo)
+
+

@@ -1,8 +1,8 @@
 project:
   type: website
   output-dir: docs
-#  resources: 
-#      - pdfs
+  resources: 
+      - pdfs
 #      - articles
 website:
   page-navigation: true

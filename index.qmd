@@ -2,10 +2,9 @@
 title: "Materials for the Dominguez Center for Data Science"
 ---
 
-
-
 ::: column-screen-inset-right
-| Event | HTML Slides                                                                      |
-|-----------------|--------------------------|
-| Coffee and Treats with L&IT  | [{{< fa display >}}](https://bucknell-data-science.github.io/dcds/data_lit_f24.html) |
+| Event | HTML Slides |
+|-----------------------------|-------------------------------------------|
+| Coffee and Treats with L&IT | [{{< fa display >}}](https://bucknell-data-science.github.io/dcds/data_lit_f24.html) |
+| rugB: R Packages | [{{< fa display >}}](https://bucknell-data-science.github.io/dcds/packages_rugB.html) |
 :::

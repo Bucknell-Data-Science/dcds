@@ -35,8 +35,7 @@ library(tidyverse)
 # options(width = 65)
 ```
 
-
-::: columns
+::::: columns
 ::: {.column .center width="60%"}
 ![](img/DAW.png){width="90%"}
 :::
@@ -51,24 +50,16 @@ library(tidyverse)
 [Kelly McConville]{.custom-subtitle}
 
 [Coffee and Treats with L&IT \| Fall 2024]{.custom-subtitle}
-
 :::
-:::
+:::::
 
-
-
-
-
-# Data literacy: The ability to **read**, **evaluate**, and **construct** arguments with data. 
-
+# Data literacy: The ability to **read**, **evaluate**, and **construct** arguments with data.
 
 ------------------------------------------------------------------------
 
 ## Bombardment of Data Arguments
 
-
-
-::: columns
+::::: columns
 ::: {.column .center width="50%"}
 ![NYTimes "What's Going on in this Graph? Oct 23, 2024"](img/GulfTempsPrintGraph-f24.jpg){width="100%"}
 :::
@@ -76,25 +67,21 @@ library(tidyverse)
 ::: {.column .center width="50%"}
 ![NYTimes "What's Going on in this Graph? Attempted Crossings at the U.S. Southern Border"](img/MigrantsBorderGraphLN-superJumbo.png){width="80%"}
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
 ## Bombardment of Data Arguments
 
-
-::: columns
+::::: columns
 ::: {.column .center width="50%"}
-![NYTimes "Some Colleges Have More
-Students From the Top 1 Percent
-Than the Bottom 60. Find Yours."](img/nytimes_opp_insights.png){width="100%"}
+![NYTimes "Some Colleges Have More Students From the Top 1 Percent Than the Bottom 60. Find Yours."](img/nytimes_opp_insights.png){width="100%"}
 :::
 
 ::: {.column .center width="50%"}
 ![Kate Petrova on X, Nov 27, 2020](img/kate_petrova_candles.jpg){width="80%"}
 :::
-:::
-
+:::::
 
 # Example: COVID Prevalence
 
@@ -104,9 +91,7 @@ Than the Bottom 60. Find Yours."](img/nytimes_opp_insights.png){width="100%"}
 
 In May of 2020, the Georgia Department of Public Health posted the following graph:
 
-
 ![](img/GAcovid.jpg){width="50%" fig-align="center"}
-
 
 -   At a quick first glance, what story does the Georgia Department of Public Health graph appear to be telling?
 
@@ -118,9 +103,7 @@ In May of 2020, the Georgia Department of Public Health posted the following gra
 
 After public outcry, the Georgia Department of Public Health said they made a mistake and posted the following updated graph:
 
-
 ![](img/GAcovid2.jpg){fig-align="center" width="40%"}
-
 
 -   How do your conclusions about COVID-19 cases in Georgia change when now interpreting this new graph?
 
@@ -297,120 +280,115 @@ ggplot(
 
 -   What are the pros of using wastewater over nasal swabs to assess COVID prevalence? What are the cons?
 
--   The graph also incorporates **uncertainty measures**.  Quantifying uncertainty is a key component of data literacy.
-
+-   The graph also incorporates **uncertainty measures**. Quantifying uncertainty is a key component of data literacy.
 
 ------------------------------------------------------------------------
 
 ## Data Literacy In Action
 
-::: columns
+:::::: columns
 ::: column
 -   Understanding the importance of **context**.
 :::
 
-::: column
+:::: column
 ::: fragment
 {{< fa arrow-right >}} Context explains the Monday jumps in the COVID counts.
 :::
-:::
-:::
+::::
+::::::
 
-::: columns
+:::::: columns
 ::: column
 -   How we **encode** information in a graph should be driven by our research question.
 :::
 
-::: column
+:::: column
 ::: fragment
 {{< fa arrow-right >}} You have a lot of **design choices** and these choices can help or hinder the story-telling.
 :::
-:::
-:::
+::::
+::::::
 
-::: columns
+:::::: columns
 ::: column
 -   How the data are **collected** impacts the conclusions we can draw.
 :::
 
-::: column
+:::: column
 ::: fragment
 {{< fa arrow-right >}} Voluntary COVID test results likely don't provide good estimates of COVID prevalence.
 :::
-:::
-:::
+::::
+::::::
 
-::: columns
+:::::: columns
 ::: column
 -   Often we are using a **sample** of data to say something about a larger group. In this case, we should measure how certain our estimates are!
 :::
 
-::: column
+:::: column
 ::: fragment
 {{< fa arrow-right >}} They sampled the wastewater and then got a range of plausible values for the RNA copies each day.
 :::
-:::
-:::
+::::
+::::::
 
 ------------------------------------------------------------------------
 
-##  Data Analysis Process
+## Data Analysis Process
 
-::: columns
+::::: columns
 ::: {.column .center width="60%"}
-
 ![](img/DAW.png){width="90%"}
 :::
 
 ::: {.column .center .middle width="40%"}
+<br> <br> <br>
 
-<br>
-<br>
-<br>
+-   Need to understand how "raw" data are processed into insights.
 
-* Need to understand how "raw" data are processed into insights.
+-   What **choices** were made at each step?
 
-* What **choices** were made at each step?  
-
-* How do those choices impact the **conclusions**?
-
+-   How do those choices impact the **conclusions**?
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
 ## Data Literacy Training
 
+-   About developing **reasoning**
 
--   About developing **reasoning** 
-    + Not just learning definitions and formulae
-    + Not just memorizing arbitrary rules (p-value $<$ 0.05, sample size $>$ 30)
+    -   Not just learning definitions and formulae
+    -   Not just memorizing arbitrary rules (p-value $<$ 0.05, sample size $>$ 30)
 
 -   Requires **judgment** that takes time to develop
 
     -   Lots of great classes at Bucknell where students practice!
 
-
 ------------------------------------------------------------------------
 
 ## Dominguez Center for Data Science
 
-* [Seminars](https://datascience.scholar.bucknell.edu/events/)
-    + AI 101, AI 102
+-   [Seminars](https://datascience.scholar.bucknell.edu/events/)
 
-* [Workshops](https://datascience.scholar.bucknell.edu/workshop/)
+    -   AI 101, AI 102
 
-* [Data Science Projects](https://datascience.scholar.bucknell.edu/projects/)
+-   [Workshops](https://datascience.scholar.bucknell.edu/workshop/)
 
-* [Communities of Practice](https://datascience.scholar.bucknell.edu/communities-of-practice/)
-    + rugB (R Users Group at Bucknell)
-    
+-   [Data Science Projects](https://datascience.scholar.bucknell.edu/projects/)
+
+-   [Communities of Practice](https://datascience.scholar.bucknell.edu/communities-of-practice/)
+
+    -   rugB (R Users Group at Bucknell)
+
 ------------------------------------------------------------------------
 
 ## Discussion Questions
-    
-* How can the Center support **data literacy** at Bucknell?
 
-* What is data literacy to you?
+-   How can the Center support **data literacy** at Bucknell?
 
-* How do you see generative AI changing or impacting data literacy?
+-   What is data literacy to you?
+
+-   How do you see generative AI changing or impacting data literacy?
