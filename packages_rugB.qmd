@@ -211,6 +211,5 @@ top10 <- function(data, x){
 
 * I will demo the process with [this Dogs of Cambridge dataset](https://data.cambridgema.gov/General-Government/Dogs-of-Cambridge/sckh-3xyx).
 
-* If following along, clone this repo: [https://github.com/harvard-stat108s23/pkgDemo](https://github.com/harvard-stat108s23/pkgDemo)
 
-* All the steps are outlined in more detail in [R Packages, 2nd Edition](https://r-pkgs.org/)
+* All the steps are outlined in much more detail in [R Packages, 2nd Edition](https://r-pkgs.org/)
