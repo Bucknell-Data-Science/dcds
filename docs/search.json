@@ -49,6 +49,13 @@
     "text": "Let’s Create an R Package!\nWill focus on dog names in Cambridge, MA because I couldn’t find a corresponding PA version of this data…"
   },
   {
+    "objectID": "packages_rugB.html#section",
+    "href": "packages_rugB.html#section",
+    "title": "Dominguez Center for Data Science",
+    "section": "",
+    "text": "Our Package: camDogs\nGoals:\n\nShare the Dogs of Cambridge dataset, along with documentation.\nCreate a function that outputs a dataset of the dogs with the 10 most common names.\nUseful MVP code:\n\n\nlibrary(tidyverse)\ncamDogs &lt;- read_csv(\"https://data.cambridgema.gov/api/views/sckh-3xyx/rows.csv?accessType=DOWNLOAD\")\n\ncamDogs &lt;- mutate(camDogs,\n               Breed = if_else(Dog_Breed == \"Mixed Breed\",\n                               \"Mixed\", \"Single\"))\n\ntop10 &lt;- function(data, x){\n\n  # Find the 10 top based on x\n  top10x &lt;- count(data, {{x}}) %&gt;%\n    slice_max(n = 10, order_by = n) %&gt;%\n    select({{x}}) %&gt;%\n    pull()\n\n   # Filter dataset to only the 10 top based on x\n  return(filter(data, {{x}} %in% top10x))\n}"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Materials for the Dominguez Center for Data Science",
@@ -95,14 +102,14 @@
     "href": "data_lit_f24.html#example-visualizing-covid-prevalence-3",
     "title": "Dominguez Center for Data Science",
     "section": "Example: Visualizing COVID Prevalence",
-    "text": "Example: Visualizing COVID Prevalence\n\n\nThe Massachusetts Water Resources Authority (MWRA) graph tracks the presence of COVID-19 in the Boston-area wastewater.\n\n\n\n\n\n\n\n\n\n\n\n\nWhat are the pros of using wastewater over nasal swabs to assess COVID prevalence? What are the cons?\nThe graph also incorporates uncertainty measures. Quantifying uncertainty is a key component of data literacy."
+    "text": "Example: Visualizing COVID Prevalence\n\nThe Massachusetts Water Resources Authority (MWRA) graph tracks the presence of COVID-19 in the Boston-area wastewater.\n\n\n\n\n\n\n\n\n\n\n\nWhat are the pros of using wastewater over nasal swabs to assess COVID prevalence? What are the cons?\nThe graph also incorporates uncertainty measures. Quantifying uncertainty is a key component of data literacy."
   },
   {
     "objectID": "data_lit_f24.html#data-literacy-in-action",
     "href": "data_lit_f24.html#data-literacy-in-action",
     "title": "Dominguez Center for Data Science",
     "section": "Data Literacy In Action",
-    "text": "Data Literacy In Action\n\n\n\nUnderstanding the importance of context.\n\n\n\n Context explains the Monday jumps in the COVID counts.\n\n\n\n\n\n\nHow we encode information in a graph should be driven by our research question.\n\n\n\n You have a lot of design choices and these choices can help or hinder the story-telling.\n\n\n\n\n\n\nHow the data are collected impacts the conclusions we can draw.\n\n\n\n Voluntary COVID test results likely don’t provide good estimates of COVID prevalence.\n\n\n\n\n\n\nOften we are using a sample of data to say something about a larger group. In this case, we should measure how certain our estimates are!\n\n\n\n They sampled the wastewater and then got a range of plausible values for the RNA copies each day."
+    "text": "Data Literacy In Action\n\n\n\nUnderstanding the importance of context.\n\n\n\n Context explains the Monday jumps in the COVID counts.\n\n\n\n\n\nHow we encode information in a graph should be driven by our research question.\n\n\n\n You have a lot of design choices and these choices can help or hinder the story-telling.\n\n\n\n\n\nHow the data are collected impacts the conclusions we can draw.\n\n\n\n Voluntary COVID test results likely don’t provide good estimates of COVID prevalence.\n\n\n\n\n\nOften we are using a sample of data to say something about a larger group. In this case, we should measure how certain our estimates are!\n\n\n\n They sampled the wastewater and then got a range of plausible values for the RNA copies each day."
   },
   {
     "objectID": "data_lit_f24.html#data-analysis-process",
@@ -137,7 +144,7 @@
     "href": "data_AI_lit_f25.html#data-literacy",
     "title": "Dominguez Center for Data Science",
     "section": "Data literacy",
-    "text": "Data literacy\n\n\nIt is not the same as mathematical literacy.\n\n\n\nSo, regardless of your math background, you can develop excellent data critical thinking skills!"
+    "text": "Data literacy\n\n\nIt is not the same as mathematical literacy.\n\n\n\nSo, regardless of your math background, you can develop excellent data skills!"
   },
   {
     "objectID": "data_AI_lit_f25.html#bombardment-of-data-arguments",
@@ -210,20 +217,6 @@
     "text": "How are LLMs so good at producing human-like text?\n\n\n\n\nUse neural networks, a very flexible type of AI model.\n\n\n\n\n\n\nBuilt on very, very large datasets.\n\n\n\nResult: A tool that takes virtually all the data on the internet and predicts what it thinks you want to say."
   },
   {
-    "objectID": "data_AI_lit_f25.html#ai-and-the-classroom",
-    "href": "data_AI_lit_f25.html#ai-and-the-classroom",
-    "title": "Dominguez Center for Data Science",
-    "section": "AI and the Classroom",
-    "text": "AI and the Classroom\n\n\n\n“AI promises compelling benefits—such as saving time in busy lives and helping your work to appear more creative or clever—but there are many important but invisible tradeoffs in using it, especially in the classroom. Therefore, at least in school, there’s good reason not to use or rely on AI/LLMs while you’re still learning new skills and growing as a person, even if it’s ok to use it in future jobs where producing work is more important than learning.” – Patrick Lin, Philosophy Professor at Cal Poly\n\n\n\n\n\n\nMake sure you are having conversations with your professors about what is and is not appropriate use of GenAI in your classes.\n\nPolicies will vary from class to class."
-  },
-  {
-    "objectID": "data_AI_lit_f25.html#ethical-use-of-genai",
-    "href": "data_AI_lit_f25.html#ethical-use-of-genai",
-    "title": "Dominguez Center for Data Science",
-    "section": "Ethical Use of GenAI",
-    "text": "Ethical Use of GenAI\n\nYou evaluate the relevance, usefulness, and accuracy of GenAI outputs.\nYou understand the potential harms of GenAI.\n\nOn the environment.\nOn the labor market.\nOn society.\n\nYou examine the privacy and data security risks of GenAI.\nYou credit GenAI contributions in your work through appropriate citations."
-  },
-  {
     "objectID": "data_AI_lit_f25.html#prompt-engineering",
     "href": "data_AI_lit_f25.html#prompt-engineering",
     "title": "Dominguez Center for Data Science",
@@ -231,11 +224,60 @@
     "text": "Prompt Engineering\n\nPrompt: The input you give the LLM to get a response.\nSpend time figuring out the problem you are trying to solve.\nClean prompts tend to contain:\n\nA task\nA format\nA voice\nContext"
   },
   {
+    "objectID": "data_AI_lit_f25.html#example",
+    "href": "data_AI_lit_f25.html#example",
+    "title": "Dominguez Center for Data Science",
+    "section": "Example",
+    "text": "Example\n\n\n\n\n\n\nIdentify the task, format, voice, and any context.\nWhat do you think?"
+  },
+  {
+    "objectID": "data_AI_lit_f25.html#iterate",
+    "href": "data_AI_lit_f25.html#iterate",
+    "title": "Dominguez Center for Data Science",
+    "section": "Iterate!",
+    "text": "Iterate!\n\n\n\n\n\n\nBetter prompts yield better outcomes.\nNeed to practice and refine our prompts to achieve better outcomes from GenAI.\nRegardless of how good your prompt is, make sure to always verify the accuracy of the outcome!"
+  },
+  {
+    "objectID": "data_AI_lit_f25.html#beware",
+    "href": "data_AI_lit_f25.html#beware",
+    "title": "Dominguez Center for Data Science",
+    "section": "Beware",
+    "text": "Beware\nLLMs give plausible results and rarely admit doubt or lack of knowledge."
+  },
+  {
+    "objectID": "data_AI_lit_f25.html#dealing-with-ai-hallucinations",
+    "href": "data_AI_lit_f25.html#dealing-with-ai-hallucinations",
+    "title": "Dominguez Center for Data Science",
+    "section": "Dealing with AI Hallucinations",
+    "text": "Dealing with AI Hallucinations\n\nAI isn’t much of a time saver if we need to verify all of its claims.\nVerification goes much faster if you already have domain knowledge and have developed your critical thinking skills."
+  },
+  {
+    "objectID": "data_AI_lit_f25.html#ai-and-the-classroom",
+    "href": "data_AI_lit_f25.html#ai-and-the-classroom",
+    "title": "Dominguez Center for Data Science",
+    "section": "AI and the Classroom",
+    "text": "AI and the Classroom\n\n\n\n“AI promises compelling benefits—such as saving time in busy lives and helping your work to appear more creative or clever—but there are many important but invisible tradeoffs in using it, especially in the classroom. Therefore, at least in school, there’s good reason not to use or rely on AI/LLMs while you’re still learning new skills and growing as a person, even if it’s ok to use it in future jobs where producing work is more important than learning.” – Patrick Lin, Philosophy Professor at Cal Poly\n\n\n\n\n\n\nMake sure you are having conversations with your professors about what is and is not appropriate use of GenAI in your classes.\n\nPolicies will vary from class to class."
+  },
+  {
+    "objectID": "data_AI_lit_f25.html#ethical-risks",
+    "href": "data_AI_lit_f25.html#ethical-risks",
+    "title": "Dominguez Center for Data Science",
+    "section": "Ethical Risks",
+    "text": "Ethical Risks\n\nWhen you do use GenAI, make sure to credit GenAI contributions in your work through appropriate citations.\nYou should evaluate the relevance, usefulness, and accuracy of all GenAI outputs.\n\n\n\n\nInvestigate the potential harms of GenAI.\n\nOn the labor market.\nOn society.\nOn the environment."
+  },
+  {
+    "objectID": "data_AI_lit_f25.html#ethical-risks-1",
+    "href": "data_AI_lit_f25.html#ethical-risks-1",
+    "title": "Dominguez Center for Data Science",
+    "section": "Ethical Risks",
+    "text": "Ethical Risks\n\n\n\nExamine the privacy and data security risks of GenAI.\n\nNo confidentiality between you and most AI tools."
+  },
+  {
     "objectID": "data_AI_lit_f25.html#developing-your-data-ai-literacy-at-bucknell",
     "href": "data_AI_lit_f25.html#developing-your-data-ai-literacy-at-bucknell",
     "title": "Dominguez Center for Data Science",
     "section": "Developing your Data & AI Literacy at Bucknell",
-    "text": "Developing your Data & AI Literacy at Bucknell\n\nAbout developing reasoning\n\nNot just learning definitions and formulae\nNot just memorizing arbitrary rules (p-value \\(&lt;\\) 0.05, sample size \\(&gt;\\) 30)\nNot just accepting any output an AI tool gives youn\n\nRequires judgment that takes time to develop\n\nLots of great classes at Bucknell to start practicing:\n\nMATH 216: Statistics I\nDATA 100: Introduction to Data Science (will be offered for the first time this spring)"
+    "text": "Developing your Data & AI Literacy at Bucknell\n\nAbout developing reasoning\n\nNot just learning definitions and formulae\nNot just memorizing arbitrary rules (p-value \\(&lt;\\) 0.05, sample size \\(&gt;\\) 30)\nNot just accepting any output an AI tool gives you\n\nRequires judgment that takes time to develop\n\nLots of great classes at Bucknell to start practicing:\n\nMATH 216: Statistics I\nDATA 100: Introduction to Data Science (will be offered for the first time this spring)"
   },
   {
     "objectID": "data_AI_lit_f25.html#opportunities-outside-the-classroom",
@@ -271,33 +313,5 @@
     "title": "Dominguez Center for Data Science",
     "section": "Stay Informed and Pathways",
     "text": "Stay Informed and Pathways\n\n\nTo stay up-to-date on data science and AI events, sign up for the Dominguez Center for Data Science list-serv:\n\n\n\nTo receive credit for attending today’s session on Data and AI Literacy:"
-  },
-  {
-    "objectID": "data_AI_lit_f25.html#what-is-ai-doing",
-    "href": "data_AI_lit_f25.html#what-is-ai-doing",
-    "title": "Dominguez Center for Data Science",
-    "section": "What is AI doing?",
-    "text": "What is AI doing?"
-  },
-  {
-    "objectID": "data_AI_lit_f25.html#example",
-    "href": "data_AI_lit_f25.html#example",
-    "title": "Dominguez Center for Data Science",
-    "section": "Example",
-    "text": "Example\n\n\n\n\n\n\nIdentify the task, format, voice, and any context.\nWhat do you think?"
-  },
-  {
-    "objectID": "data_AI_lit_f25.html#iterate",
-    "href": "data_AI_lit_f25.html#iterate",
-    "title": "Dominguez Center for Data Science",
-    "section": "Iterate!",
-    "text": "Iterate!\n\n\n\n\n\n\nBetter prompts yield better outcomes.\nNeed to practice and refine our prompts to achieve better outcomes from GenAI.\nRegardless of how good your prompt is, make sure to always verify the accuracy of the outcome!"
-  },
-  {
-    "objectID": "data_AI_lit_f25.html#beware",
-    "href": "data_AI_lit_f25.html#beware",
-    "title": "Dominguez Center for Data Science",
-    "section": "Beware",
-    "text": "Beware\nLLMs give plausible results and rarely admit doubt or lack of knowledge."
   }
 ]

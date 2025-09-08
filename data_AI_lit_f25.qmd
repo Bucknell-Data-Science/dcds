@@ -66,7 +66,7 @@ It is not the same as mathematical literacy.
 <br>
 
 ::: {.fragment .midi}
-So, regardless of your math background, you can develop excellent data critical thinking skills!
+So, regardless of your math background, you can develop excellent data skills!
 :::
 
 ------------------------------------------------------------------------
@@ -456,6 +456,13 @@ LLMs give plausible results and rarely admit doubt or lack of knowledge.
 
 ![](img/prompt_ds3.png){fig-align="center" width="60%"}
 
+---
+
+## Dealing with AI Hallucinations
+
+* AI isn't much of a time saver if we need to verify all of its claims.  
+
+* Verification goes much faster if you already have domain knowledge and have developed your critical thinking skills.
 
 ------------------------------------------------------------------------
 
@@ -476,22 +483,60 @@ LLMs give plausible results and rarely admit doubt or lack of knowledge.
 -   Make sure you are having conversations with your professors about what is and is not appropriate use of GenAI in your classes.
     -   Policies will vary from class to class.
 
+
 ------------------------------------------------------------------------
 
-## Ethical Use of GenAI
+## Ethical Risks
 
--   You evaluate the relevance, usefulness, and accuracy of GenAI outputs.
+-   When you do use GenAI, make sure to credit GenAI contributions in your work through appropriate citations.
 
--   You understand the potential harms of GenAI.
+-   You should evaluate the relevance, usefulness, and accuracy of all GenAI outputs.
 
-    -   On the environment.
+::: columns
+
+::: column
+
+-   Investigate the potential harms of GenAI.
     -   On the labor market.
     -   On society.
+    -   On the environment.
 
--   You examine the privacy and data security risks of GenAI.
+:::
 
--   You credit GenAI contributions in your work through appropriate citations.
+::: column
 
+::: fragment
+
+![](img/google_emissions.png)
+
+:::
+:::
+:::
+
+
+----
+
+## Ethical Risks
+
+::: columns
+
+::: column
+
+-   Examine the privacy and data security risks of GenAI.
+    - No confidentiality between you and most AI tools.
+
+:::
+
+::: column
+
+::: fragment
+ 
+![](img/AI_article.png)
+
+:::
+
+:::
+:::
 
 ------------------------------------------------------------------------
 
@@ -501,7 +546,7 @@ LLMs give plausible results and rarely admit doubt or lack of knowledge.
 
     -   Not just learning definitions and formulae
     -   Not just memorizing arbitrary rules (p-value $<$ 0.05, sample size $>$ 30)
-    -   Not just accepting any output an AI tool gives youn
+    -   Not just accepting any output an AI tool gives you
 
 -   Requires **judgment** that takes time to develop
 
