@@ -2,7 +2,7 @@
 pagetitle: "Data and AI Literacy"
 format: 
   revealjs:
-    chalkboard: true
+#    chalkboard: true
     incremental: true
     theme: [default, custom.scss]
 #    multiplex: true
@@ -35,67 +35,59 @@ library(tidyverse)
 # options(width = 65)
 ```
 
-::: columns
+::::: columns
 ::: {.column .center width="60%"}
 ![](img/DAW.png){width="90%"}
 :::
 
 ::: {.column .center width="40%"}
-
 [Data and AI Literacy]{.custom-title}
 
 <br>
 
 [Kelly McConville]{.custom-subtitle}
 
-[Dominguez Center for Data Science]{.custom-subtitle}
-[Fall 2025]{.custom-subtitle}
+[Dominguez Center for Data Science]{.custom-subtitle} [Fall 2025]{.custom-subtitle}
 :::
-:::
+:::::
 
 # Data literacy: The ability to **read**, **evaluate**, and **construct** arguments with data.
 
----
+------------------------------------------------------------------------
 
 ## Data literacy
 
-
 <br>
 
-::: {.fragment .fade-up .midi}
+::: {.fragment .midi}
 It is not the same as mathematical literacy.
 :::
 
 <br>
 
-::: {.fragment .fade-up .midi}
-
+::: {.fragment .midi}
 So, regardless of your math background, you can develop excellent data critical thinking skills!
-
 :::
 
 ------------------------------------------------------------------------
 
 ## Bombardment of Data Arguments
 
-
-::: columns
+::::: columns
 ::: {.column .center width="50%"}
-![NYTimes "What's Going on in this Graph? College Admissions"](img/college admissions graph.webp){width="100%"}
+![NYTimes "What's Going on in this Graph? College Admissions"](img/college%20admissions%20graph.webp){width="100%"}
 :::
 
 ::: {.column .center width="50%"}
-![NYTimes "What's Going on in this Graph? College Priorities"](img/college priorities graph.webp){width="100%"}
+![NYTimes "What's Going on in this Graph? College Priorities"](img/college%20priorities%20graph.webp){width="100%"}
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
 ## Bombardment of Data Arguments
-
 
 ![Kate Petrova on X, Nov 27, 2020](img/kate_petrova_candles.jpg){width="70%"}
-
 
 # Example: COVID Prevalence
 
@@ -300,59 +292,59 @@ ggplot(
 
 ## Data Literacy In Action
 
-::: columns
+:::::: columns
 ::: column
 -   Understanding the importance of **context**.
 :::
 
-::: column
+:::: column
 ::: fragment
 {{< fa arrow-right >}} Context explains the Monday jumps in the COVID counts.
 :::
-:::
-:::
+::::
+::::::
 
-::: columns
+:::::: columns
 ::: column
 -   How we **encode** information in a graph should be driven by our research question.
 :::
 
-::: column
+:::: column
 ::: fragment
 {{< fa arrow-right >}} You have a lot of **design choices** and these choices can help or hinder the story-telling.
 :::
-:::
-:::
+::::
+::::::
 
-::: columns
+:::::: columns
 ::: column
 -   How the data are **collected** impacts the conclusions we can draw.
 :::
 
-::: column
+:::: column
 ::: fragment
 {{< fa arrow-right >}} Voluntary COVID test results likely don't provide good estimates of COVID prevalence.
 :::
-:::
-:::
+::::
+::::::
 
-::: columns
+:::::: columns
 ::: column
 -   Often we are using a **sample** of data to say something about a larger group. In this case, we should measure how certain our estimates are!
 :::
 
-::: column
+:::: column
 ::: fragment
 {{< fa arrow-right >}} They sampled the wastewater and then got a range of plausible values for the RNA copies each day.
 :::
-:::
-:::
+::::
+::::::
 
 ------------------------------------------------------------------------
 
 ## Data Analysis Process
 
-::: columns
+::::: columns
 ::: {.column .center width="50%"}
 ![](img/DAW.png){width="80%"}
 :::
@@ -366,109 +358,139 @@ ggplot(
 
 -   How do those choices impact the **conclusions**?
 :::
-:::
+:::::
 
 # AI Literacy, while really GenAI Literacy
 
----
+------------------------------------------------------------------------
 
 ## Terms, Terms, Terms
 
-::: columns
+::::: columns
 ::: {.column .center width="50%"}
 ![](img/terms.png){width="80%"}
 :::
 
 ::: {.column width="50%"}
+-   **AI** = artificial intelligence
 
-* **AI** = artificial intelligence
-    + Models that try to predict outcomes.
-    
-* **GenAI** = AI models that produce text, images, and videos in response to prompts.
+    -   Models that try to predict outcomes.
 
-* **LLMs** = large language models
-    + Can produce text that is very similar to human written text.
+-   **GenAI** = AI models that produce text, images, and videos in response to prompts.
 
+-   **LLMs** = large language models
+
+    -   Can produce text that is very similar to human written text.
 :::
+:::::
 
-:::
-
----
+------------------------------------------------------------------------
 
 ## How are LLMs so good at producing human-like text?
 
-::: columns
+:::::: columns
 ::: {.column .center width="50%"}
-![](img/neural_network.png){width="80%"}
+![](img/neural_network.png){width="50%"}
 
-
-* Use neural networks, a very flexible type of AI model.
-
+-   Use neural networks, a very flexible type of AI model.
 :::
 
-::: {.column .center width="50%"}
+:::: {.column .center width="50%"}
+::: fragment
+![](img/big_data.png){width="50%"}
+:::
+
+-   Built on very, very large datasets.
+::::
+::::::
 
 ::: fragment
 
-![](img/big_data.png){width="80%"}
-:::
-
-* Built on very, very large datasets.
-    + Think "the internet".
-
-
+**Result:** A tool that takes virtually all the data on the internet and predicts what it thinks you want to say.
 
 :::
 
-:::
-
----
-
-## AI and the Classroom
-
-::: columns
-::: {.column width="80%"}
-
-> "AI promises compelling benefits—such as saving time in busy lives and helping your work to appear more creative or clever—but there are many important but invisible tradeoffs in using it, especially in the classroom. Therefore, at least in school, **there’s good reason not to use or rely on AI/LLMs while you’re still learning new skills and growing as a person**, even if it’s ok to use it in future jobs where producing work is more important than learning." -- Patrick Lin, Philosophy Professor at Cal Poly
-
-::: 
-::: {.column .center width="20%"}
-
-<br>
-
-
-![](img/patrick_lin.webp)
-
-:::
-
-:::
-
-* Make sure you are having conversations with your professors about what is and is not appropriate use of GenAI in your classes.
-    + Policies will vary from class to class.
-
----
-
-## Ethical use of GenAI
-
-* You evaluate the relevance, usefulness, and accuracy of GenAI outputs.
-
-* You understand the potential harms of GenAI.
-    + On the environment.
-    + On the labor market.
-    + On society.
-
-* You examine the privacy and data security risks of GenAI.
-
-* You credit GenAI contributions in your work through appropriate citations.
-
-
----
+------------------------------------------------------------------------
 
 ## Prompt Engineering
 
-* Write an effective prompt is tough.
+-   **Prompt**: The input you give the LLM to get a response.
 
-* Need to practice and refine our prompts to achieve better outcomes from GenAI.
+-   Spend time figuring out the problem you are trying to solve.
+
+-   Clean prompts tend to contain:
+    + A task
+    + A format
+    + A voice
+    + Context
+
+
+---
+
+## Example
+
+![](img/prompt_ds.png){fig-align="center" width="60%"}
+
+* Identify the **task**, **format**, **voice**, and any **context**.
+
+* What do you think?
+
+---
+
+## Iterate!
+
+![](img/prompt_ds2.png){fig-align="center" width="60%"}
+
+
+-   Better prompts yield better outcomes.
+
+-   Need to practice and refine our prompts to achieve better outcomes from GenAI.
+
+-  Regardless of how good your prompt is, make sure to always verify the accuracy of the outcome!
+
+---
+
+##  Beware
+
+LLMs give plausible results and rarely admit doubt or lack of knowledge.
+
+![](img/prompt_ds3.png){fig-align="center" width="60%"}
+
+
+------------------------------------------------------------------------
+
+## AI and the Classroom
+
+::::: columns
+::: {.column width="80%"}
+> "AI promises compelling benefits—such as saving time in busy lives and helping your work to appear more creative or clever—but there are many important but invisible tradeoffs in using it, especially in the classroom. Therefore, at least in school, **there’s good reason not to use or rely on AI/LLMs while you’re still learning new skills and growing as a person**, even if it’s ok to use it in future jobs where producing work is more important than learning." -- Patrick Lin, Philosophy Professor at Cal Poly
+:::
+
+::: {.column .center width="20%"}
+<br>
+
+![](img/patrick_lin.webp)
+:::
+:::::
+
+-   Make sure you are having conversations with your professors about what is and is not appropriate use of GenAI in your classes.
+    -   Policies will vary from class to class.
+
+------------------------------------------------------------------------
+
+## Ethical Use of GenAI
+
+-   You evaluate the relevance, usefulness, and accuracy of GenAI outputs.
+
+-   You understand the potential harms of GenAI.
+
+    -   On the environment.
+    -   On the labor market.
+    -   On society.
+
+-   You examine the privacy and data security risks of GenAI.
+
+-   You credit GenAI contributions in your work through appropriate citations.
 
 
 ------------------------------------------------------------------------
@@ -479,21 +501,19 @@ ggplot(
 
     -   Not just learning definitions and formulae
     -   Not just memorizing arbitrary rules (p-value $<$ 0.05, sample size $>$ 30)
-    -   Consider the appropriateness of AI for the task at hand.
-    
-    
+    -   Not just accepting any output an AI tool gives youn
+
 -   Requires **judgment** that takes time to develop
 
     -   Lots of great classes at Bucknell to start practicing:
-        - MATH 216: Statistics I
-        - DATA 100: Introduction to Data Science (will be offered for the first time this spring)
+        -   MATH 216: Statistics I
+        -   DATA 100: Introduction to Data Science (will be offered for the first time this spring)
 
 ------------------------------------------------------------------------
 
 ## Opportunities Outside the Classroom
 
-
-![](img/DCDS_DATA_VIZ_BADGE-3-Digital Signs.png)
+![](img/DCDS_DATA_VIZ_BADGE-3-Digital%20Signs.png){width="90%"}
 
 ------------------------------------------------------------------------
 
@@ -501,91 +521,70 @@ ggplot(
 
 Tuesday, September 9, 2025 4:30-6:00pm, Taylor 210
 
-::: columns
+::::: columns
 ::: {.column width="80%"}
-
 > Want to make your data visualizations stand out? No matter what tool you use, your chart, color, and text choices will have a huge impact on how people interpret your results. This workshop will cover design best practices useful for any platform, so no experience with data visualization tools is required.
 
 `r emo::ji("pizza")` and `r emo::ji("cookie")` provided!
+:::
 
-::: 
 ::: {.column .center width="20%"}
-
-
-
-
 ![](img/qr-viz.svg)
-
 :::
+:::::
 
-:::
-
-
----
+------------------------------------------------------------------------
 
 ## Opportunities Outside the Classroom
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
-
-![](img/9-19 Ken Baron lunch-n-learn.png){width="100%"}
-
-
+![](img/9-19%20Ken%20Baron%20lunch-n-learn.png){width="100%"}
 :::
 
 ::: {.column width="50%"}
-
-![](img/rugB Flyer F25.png){width="100%"}
-
+![](img/rugB%20Flyer%20F25.png){width="100%"}
 :::
+:::::
 
-:::
-
----
+------------------------------------------------------------------------
 
 ## AI Talk: Data Science in the Age of AI: AI is the Engine & You are the Engineer
 
 Thursday, November 6th noon - 12:50pm, Taylor 208, Food provided
 
-::: columns
+::::: columns
 ::: {.column width="85%"}
+> Generative AI tools are a game-changer for complex data science projects. They can accelerate a project from 0 to 80% complete in a remarkably short amount of time, but the final 20% still demands the skills of a human data scientist to create a robust, nuanced, and context-specific solution.
 
-> Generative AI tools are a game-changer for complex data science projects.  They can accelerate a project from 0 to 80% complete in a remarkably short amount of time, but the final 20% still demands the skills of a human data scientist to create a robust, nuanced, and context-specific solution.  
+> In this talk, I will walk through several projects I have completed with the help of large language models. With each project, I will show you how to construct tasks for AI and which components require human expertise. My goal is to help you think through the role of the human in data science work and the AI skills you should be developing while you are here at Bucknell and how these skills will prepare you to adapt and stay ahead in the rapidly evolving world after you leave Bucknell.
+:::
 
-> In this talk, I will walk through several projects I have completed with the help of large language models.  With each project, I will show you how to construct tasks for AI and which components require human expertise.  My goal is to help you think through the role of the human in data science work and the AI skills you should be developing while you are here at Bucknell and how these skills will prepare you to adapt and stay ahead in the rapidly evolving world after you leave Bucknell.
-
-::: 
 ::: {.column .center width="15%"}
-
-
 ![](img/chester_ismay.png)
 
 **Guest Speaker:** Chester Ismay
-
 :::
+:::::
 
-:::
-
----
+------------------------------------------------------------------------
 
 ## Stay Informed and Pathways
 
-::: columns
-::: {.column width="50%" .center}
-
+::::: columns
+::: {.column .center width="50%"}
 To stay up-to-date on **data science and AI events**, sign up for the Dominguez Center for Data Science list-serv:
 
 <br>
 
 ![](img/data-list-qr-code.svg){width="60%"}
 :::
-::: {.column width="50%" .center}
 
+::: {.column .center width="50%"}
 To receive credit for attending today's session on **Data and AI Literacy**:
 
-<br>
-<br>
+<br> <br>
 
 ![](img/pathways_QR_code.png){width="50%"}
 :::
-:::
+:::::
